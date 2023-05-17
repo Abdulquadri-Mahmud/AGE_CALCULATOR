@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="png" href="images/age calculator.png">
+  <title>Age calculator app</title>
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <div class="container">
+    <div class="wrapper">
+      <div class="header_cont">
+        <div class="header">
+          <h1>Age Calculator</h1>
+        </div>
+      </div>
+      <form for="form" class="userInput">
+        <div class="input">
+          <h3>Day</h3>
+          <input type="number" id="day" placeholder="Day" required>
+        </div>
+        <div class="input">
+          <h3>Month</h3>
+          <input type="number" id="month" placeholder="Month" required>
+        </div>
+        <div class="input">
+          <h3>Year</h3>
+          <input type="number" id="year" placeholder="Year" required>
+        </div>
+        <div class="submit">
+          <!-- <button href="#">Refresh</button> -->
+          <div>
+            <p>Get Result &RightArrow;&RightArrow;&RightArrow; </p>
+          </div>
+          <button name="form" type="submit" class="submitBtn"><img src="images/icon-arrow.svg" alt=""></button>
+        </div>
+      </form>
+      <div class="error">
+        <p class="display_error"></p>
+      </div>
+      <div class="result">
+        <h1>Day: &nbsp;<span class="day_result">0</span></h1>
+        <h1>Month: &nbsp;<span class="month_result">0</span></h1>
+        <h1>Years: &nbsp;<span class="year_result">0</span></h1>
+      </div>
+      <p class="final_result">Final Result: <span class="final-result"></span></p>
+      <footer>
+        <p>&copy; Copy Right | AQMA TECH | 2023.</p>
+      </footer>
+    </div>
+  </div>
+</body>
+</html>
